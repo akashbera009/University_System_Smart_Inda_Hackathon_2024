@@ -1,0 +1,31 @@
+#main-banner-container{
+    min-height: 25vh;
+    max-height: 25vh;
+    width: 70vw;
+    background: linear-gradient(140deg,#8d76cd,#6944cd,#6944cd,#6944cd,#6944cd);
+    /* background: linear-gradient(140deg,rgb(254, 197, 137),  rgb(239, 61, 123),rgb(236, 43, 168)); */
+    border-radius: .7rem;
+    border: 2px solid #131313;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    }
+#banner-image{
+    /* height: 10rem; */
+    width: 14rem;
+    animation: wave 5s ease-in-out infinite ;
+    position: relative;
+}
+@keyframes wave {
+    0%{
+        top:0vh;
+        transform: scale(1.05);
+    }    
+    50%{
+        top:2vh;
+    }    
+    100%{
+        transform: scale(1.05);
+        top:0vh;
+    }    
+}

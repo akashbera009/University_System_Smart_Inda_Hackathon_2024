@@ -1,0 +1,93 @@
+#uni_head{
+    width: 65%;
+    font-size:180%;
+    font-weight:bolder;
+    margin: .5rem 0;
+    background: linear-gradient(to right, rgb(96, 191, 255),rgb(244, 74, 247), rgb(253, 67, 67) );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.wallet-profile{
+    /* width: 7rem; */
+    height: 1.5rem;
+    background: linear-gradient(300deg, rgba(204, 165, 120, 0.772),rgb(154, 41, 177), rgb(145, 105, 237) );
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    position: absolute;
+    right: 3rem;
+    top: 2vh;
+    /* display: none; */
+    
+}
+.wallet-profile-name{
+ padding:0 .5rem;
+}
+.wallet-profile-img{
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.container{
+    /* height: 100vh; */
+    /* width: 100vw; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* margin: 0 .5vw; */
+    /* background-color: rgb(53, 149, 53); */
+    padding: 2rem;
+}
+.fake_sidebar_forA_reason{
+    min-width: 20vw;
+    width: 15vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+
+.right-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 5vw; */
+    /* background-color: rgb(158, 107, 42); */
+    /* margin-top: 5vh; */
+}
+#content{
+    width: 80%;
+    background-color:transparent;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+.footer{
+    width: 80%;
+}
+@media (min-width:350px) and  (max-width:850px)  {
+    #uni_head{
+        width: 70%;
+        font-size: 100%;
+        margin-left: -2rem;
+    } .wallet-profile p{
+        display: none;
+    }
+    .wallet-profile{
+        right: 1rem;
+        top: 1vh;
+        /* width: 10%; */
+        height: 2.5rem;
+        width: 2.5rem;
+        /* &:hover{
+            width: 100%;
+            .wallet-profile-name{
+                display: block;
+            }
+        } */
+    }
+   
+  
+  }

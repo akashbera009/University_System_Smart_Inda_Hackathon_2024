@@ -1,0 +1,470 @@
+.searchbar {
+    width: 18vw;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    background-color: #3d3d3d;
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgb(92, 43, 120);
+    position: sticky;
+    z-index: 10;
+    left: 75%;
+    top: 1vh;
+    overflow: hidden;
+}
+
+.searchbar:hover {
+    border: 2px solid rgb(200, 200, 200);
+}
+
+.searchbar:focus-within {
+    background: #464646;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+#searchText {
+    height: 90%;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 5%;
+}
+
+#searchBtn{
+    padding: .7rem;
+    background: linear-gradient(150deg, rgb(254, 197, 137),  rgb(239, 61, 123),rgb(236, 43, 168) );
+
+}
+#search-icon{
+    font-size: 2rem;
+    /* color: white; */
+    
+}
+.outer-view-section{
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-color: #46464693;
+    /* max-height: 80vh; */
+    /* overflow:scroll; */
+    
+}
+.student-data{
+    width: 50vw;
+    height: 7rem;
+    /* background: linear-gradient(135deg, rgba(204, 165, 120, 0.772),rgb(154, 41, 177), rgb(145, 105, 237) ); */
+    background-color:rgb(15, 23, 46); 
+    background-color: #15172b;
+    backdrop-filter: blur(10px);
+    box-shadow: inset -2px -2px 5px black;
+    border-radius: 1rem;
+    display: flex;
+    margin: .5rem;
+    border: 1px solid rgb(74, 64, 255);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stu-row-data{
+    height: 100%;
+    /* background-color: red; */
+    margin: .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.stu_img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(120deg,rgb(154, 41, 177), rgb(105, 112, 237) );
+    background-size: cover;
+    box-shadow: 0px 0px 8px rgb(51, 34, 57);
+    border: 1px solid transparent;
+}
+.name-enroll-branch{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:self-start;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+/* .stu_name{
+    font-size: larger;
+    text-shadow: 2px 2px 2px black;
+} */
+.stu_enrollment{
+    background-color: #402f42c1;
+    backdrop-filter: blur(10px);
+    margin: 2%;
+    padding: 4%;
+    border-radius: .4rem;
+}
+.stu_branch{
+    text-align: center;
+    border: 1px solid black;
+    background-color: #45496791;
+    backdrop-filter: blur(10px);
+    /* padding: .2rem; */
+    border-radius: .4rem;
+}
+.edit-stu-btn{
+    /* background: linear-gradient(135deg, rgb(47, 171, 142) -2.3%, rgb(19, 183, 109) , rgb(33, 139, 36)); */
+    background-color: #464646;
+    font-size: 1vw;
+    padding: .5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px black , inset  -2px -2px 5px black;
+    transition: .3s;
+    font-weight: 700;
+    &:active{
+        transform: scale(.95);
+    }
+}
+.view-stu-btn{
+    background: linear-gradient(150deg, rgb(254, 197, 137),  rgb(239, 61, 123),rgb(236, 43, 168) );
+    /* background-color: greenyellow; */
+    /* background-color: #bf40ff; */
+    font-size: 1vw;
+    padding: .5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    /* overflow: hidden; */
+    box-shadow: 2px 2px 5px black , inset  -2px -2px 5px black;
+    transition: .3s;
+    &:active{
+        transform: scale(.95);
+    }
+}   
+
+.view-data-open{
+    /* background-color: #ea0b0b; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+
+  
+  .view_data_content {
+    height: 90vh;
+    width: 70vw;
+    padding: 20px;
+    border-radius: .5rem;
+    background-color:#15172b;
+    border: 1px solid #ddd;
+    margin: 2% auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .edit-data-open{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+  }
+.edit_data_content{
+    height: 90vh;
+    width: 70vw;
+    padding: 20px;
+    border-radius: .5rem;
+    background-color:#15172b;
+    border: 1px solid #ddd;
+    margin: 2% auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+  /* Styling the scrollbar */
+  .view_data_content::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    /* border-radius: .5rem; */
+  }
+  
+  /* Track (background) */
+  .view_data_content::-webkit-scrollbar-track {
+    background: #969494;
+    position: relative;
+    left: 1rem;
+    border-radius: .5rem;
+  }
+  
+  /* Thumb (scrollbar handle) with a linear gradient */
+  .view_data_content::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(154, 41, 177), rgb(105, 112, 237));
+    border-radius: .5rem;
+    transition: 0.3s;
+  }
+  
+  /* Handle on hover */
+  .view_data_content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(360deg, rgb(154, 41, 177), rgb(105, 112, 237));
+  }
+
+  
+  .close-btn {
+    position: absolute;
+    top: 7%;
+    right: 17%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: #f97171;
+  }
+  
+  .close-btn:hover {
+    color: #707070;
+  }
+  .confirm-form-changes{
+    background: linear-gradient(150deg, rgb(169, 253, 184),  rgb(84, 244, 69),rgb(28, 196, 65) );
+    box-shadow: 2px 2px 5px black , inset -2px -2px 5px black ;
+    color: #15172b;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    margin:  0 auto;
+    border-radius: 10px;
+  }
+  .go-back{
+    background: linear-gradient(150deg, rgb(254, 197, 137),  rgb(241, 29, 103),rgb(244, 38, 38) );
+    box-shadow: 2px 2px 5px black , inset -2px -2px 5px black ;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    margin:  0 auto;
+    border-radius: 10px;
+  }
+  @media (min-width:350px) and  (max-width:850px)  {
+    .view_data_content {
+        width: 95%;
+        height: 90%;
+        margin-top: 8%
+    }
+  }
+
+
+
+
+  .input-field{
+    position: relative;
+    margin-top: 25px;
+  }
+  .input-field input{
+    width: 20vw;
+    height:5vh;
+    border-radius: 6px;
+    font-size: 18px;;
+    padding: 0 15px;
+    border: 2px solid #484646;
+    outline: none;
+    color: rgb(181, 174, 174);
+    background-color: rgb(40, 40, 51);
+    /* box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);  */
+  
+  }
+  .input-field label{
+    position: absolute;
+    top: 50%;
+    left:15px;
+    transform: translateY(-50%);
+    color: #f7f2f2;
+    font-size: 19px;
+    pointer-events: none;
+    transition: .1s;
+  
+  }
+  input:focus{
+    border: 2px solid rgb(145,105,237);  
+    /* border: 2px solid rgb(154,41,177); */
+  
+    
+  
+  }
+  input:focus ~ label,
+  input:valid ~ label{
+    top: 0;
+    font-size: 16px;
+    padding: 0 10px;
+    background-color: rgb(99, 68, 171);
+    border-radius: 10px;
+  
+  }
+  
+  .whole-form-container{
+    /* background-color: #085530; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0px ;
+    left: 0px ;
+    backdrop-filter: blur(10px)
+    
+  }
+  .student-add-form{
+    background-color: #15172b;
+    height: 85vh; 
+    width: 50vw;
+    overflow: auto;
+    margin: 0 auto;
+    border-radius: 1.75rem;
+    margin-top: 20px;
+  
+    position: relative;
+    /* overflow: hidden; */
+    border: 2px solid white;
+  
+  
+  }
+  
+  .form{
+    /* background-color: #1dc071; */
+    padding: 1rem;
+  }
+  
+  .form-con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    /* background-color: red; */
+  
+   
+  }
+  .con1{
+    background-color: ;
+  }
+  .input-field select{
+    width: 20vw;
+    height:5vh;
+    border-radius: 6px;
+    font-size: 18px;;
+    padding: 0 15px;
+  
+    outline: none;
+    color: rgb(239, 232, 232);
+    margin-top: 0px; 
+    background-color: rgb(40, 40, 51);
+    /* box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);  */
+    
+  }
+  #address{
+    margin-left: 3.5vw;
+  }
+  #address input{
+    width: 43vw;
+   
+  }
+  .profile-pic {
+    width: 30vW;
+    position: relative;
+    left: 300px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+  }
+  .profile-pic img{
+    height: 50px;
+    width: 50px;
+  }
+  .profile-pic input{
+   width: 30vw;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 18px;;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    outline: none;
+    color: rgb(10, 11, 11);
+    background-color: rgb(154, 146, 146);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+  .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .submit button{
+    height: 5vh;
+    width: 20vw;
+    background-color:#1dc071;
+   
+   border-radius: 1rem;
+   font-weight: bold;
+   text-shadow: 2px 2px 4px #15172b;
+   font-size: 20px;
+  
+  
+  }
+  .student img{
+    height: 70px;
+  
+  }
+  .university img{
+    height: 70px;
+  }
+  .right-arrow img{
+    height: 70px;
+  }
+  .form-header{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 180px;
+  
+  }
+  
+  .form-header .image{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  
+  }
+  .off_card{
+   position: relative;
+   left: 80px;
+   font-size: 30px;
+   background-color: #1dc071;
+   height: 38px;
+   width: 35px;
+   text-align: center;
+  }
+  #profile-url{
+    display: flex;
+   margin-left: 3.5vw;
+   
+  }
+  #profile-url input{
+    width: 43vw;
+    height: 5vh;
+  }

@@ -1,0 +1,6 @@
+#main{
+    height: 10rem;
+    width: 90%;
+    background-color: aqua;
+    display: flex;
+}
