@@ -1,0 +1,210 @@
+.verification-whole{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+.single-verification {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  input[type="text"], input[type="file"] {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .virification-accordion {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .verification-section h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .verification-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+.bulk-verification {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color:#333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bulk-verification h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .bulk-verification input[type="file"] {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .bulk-verification button {
+    background-color: #4493f8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .bulk-verification button:hover {
+    background-color: #3778c2;
+  }
+  
+  .bulk-verification button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .verification-status {
+    margin-top: 2rem;
+  }
+  
+  .verification-status h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .verification-status ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .verification-status li {
+    background-color:#4444;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .verification-status li .verified {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .verification-status li .not-verified {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup-content {
+    /* background: white; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    min-width: 600px;
+  }
+  
+  .popup-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .ledger {
+    width: 100%;
+  }
+  
+  .ledger-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ledger-header {
+    background-color: #444;
+    display: flex;
+  }
+  
+  .ledger-cell {
+    flex: 1;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .ledger-row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ledger-row:last-child {
+    border-bottom: none; /* Remove border from last row */
+  }
+  
+  .verified {
+    color: green;
+  }
+  
+  .not-verified {
+    color: red;
+  }
+  
+    
+
+  .close-popup-btn {
+    background-color: #4493f8;
+    background: linear-gradient(135deg , #de0cff, #850cff);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 700;
+  }

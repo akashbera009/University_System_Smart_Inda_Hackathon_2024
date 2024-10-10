@@ -20,13 +20,16 @@ import Student_detail from "./components/01_student/student_detail/Student_detai
 
 // university 
 import Uni_layout from './components/02_university/Uni_layout.jsx'
-import Upload_certificate from './components/02_university/certification/Upload_certificate.jsx'
 import Add_course from './components/02_university/course/Add_course.jsx'
 import View_course from './components/02_university/course/View_course.jsx'
 import Add_faculty from './components/02_university/faculty/Add_faculty.jsx'
 import View_faculty from './components/02_university/faculty/View_faculty.jsx'
 import Add_student from './components/02_university/student/Add_student.jsx'
 import View_student from './components/02_university/student/View_student.jsx'
+import Certificate_Issue from './components/02_university/certification/Certificate_Issue.jsx'
+import Verification_certificate from './components/02_university/certification/Verification_certificate.jsx'
+import Certificate_records from './components/02_university/certification/Certificate_records.jsx'
+import Certificate_Access_Control from './components/02_university/certification/Certificate_Access_Control.jsx'
 
 // AICTE
 import Aic_layout from './components/03_aicte/Aic_layout.jsx'
@@ -39,6 +42,7 @@ import Comp_layout from './components/04_company/Comp_layout.jsx'
 import Verify_degree from './components/04_company/verify_degree/Verify_degree.jsx'
 
 import './App.css'
+import UserAccessControl from './components/02_university/certification/Certificate_Access_Control.jsx'
 
 
 function App() {
@@ -62,7 +66,10 @@ function App() {
 
         {/*University*/}
             <Route path='university/' element={<Uni_layout/>}> 
-              <Route path='upload_certificate' element={<Upload_certificate/>}/>
+              <Route path='certificate-issue' element={<Certificate_Issue/>}/>
+              <Route path='certificate-verify' element={<Verification_certificate/>}/>
+              <Route path='certificate-record' element={<Certificate_records/>}/>
+              <Route path='certificate-access-control' element={<UserAccessControl role={"admin"}/>}/>
               <Route path='add_course' element={<Add_course/>}/> 
               <Route path='view_course' element={<View_course/>}/>
               <Route path='add_faculty' element={<Add_faculty/>}/>

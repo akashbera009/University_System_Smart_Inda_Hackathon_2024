@@ -70,8 +70,8 @@ function Uni_sidebar() {
         </div>
         {openIndex === 1 && (
           <div class="panel">
-           <p> <NavLink to="/university/add_student"  ><p class="side-nav-sub-list">Add New Student</p></NavLink></p>
-           <p><NavLink to="/university/view_student"><p class="side-nav-sub-list">View Student Details</p></NavLink></p>
+           <p> <NavLink to="/university/add_faculty"  ><p class="side-nav-sub-list">Add New Faculty</p></NavLink></p>
+           <p><NavLink to="/university/view_faculty"><p class="side-nav-sub-list">View Faculty</p></NavLink></p>
           </div>
         )}
       </div>
@@ -155,8 +155,8 @@ function Uni_sidebar() {
         </div>
         {openIndex === 5 && (
           <div class="panel">
-            <p> <NavLink to="/university/add_student"  ><p class="side-nav-sub-list">Add New Student</p></NavLink></p>
-            <p><NavLink to="/university/view_student"><p class="side-nav-sub-list">View Student Details</p></NavLink></p>
+            <p> <NavLink to="/university/add_course"  ><p class="side-nav-sub-list">Add New Course</p></NavLink></p>
+            <p><NavLink to="/university/view_course"><p class="side-nav-sub-list">View Current Courses</p></NavLink></p>
           </div>
         )}
       </div>
@@ -169,8 +169,10 @@ function Uni_sidebar() {
         </div>
         {openIndex === 6 && (
           <div class="panel">
-            <p> <NavLink to="/university/add_student"  ><p class="side-nav-sub-list">Add New Student</p></NavLink></p>
-            <p><NavLink to="/university/view_student"><p class="side-nav-sub-list">View Student Details</p></NavLink></p>
+            <p> <NavLink to="/university/certificate-issue"  ><p class="side-nav-sub-list">Certificate Issuance</p></NavLink></p>
+            <p><NavLink to="/university/certificate-verify"><p class="side-nav-sub-list">Verification</p></NavLink></p>
+            <p><NavLink to="/university/certificate-record"><p class="side-nav-sub-list">Record Keeping</p></NavLink></p>
+            <p><NavLink to="/university/certificate-access-control"><p class="side-nav-sub-list">User Access Control</p></NavLink></p>
           </div>
         )}
       </div>
